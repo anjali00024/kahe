@@ -10,6 +10,13 @@ html {
   
 }
 
+#banner{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/img3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;  
+
+}
+
 body {
   font-family: 'Source Sans Pro';
 }
@@ -63,11 +70,65 @@ body {
 }
 
 #about{
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/260673.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;  background-attachment: fixed;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/img4.jpg");
+  background-position: center ;
+  background-repeat: no-repeat;  background-size: cover;
+  min-height: 400px;
+  
+  
+  
+}
+.overlay{
+  background-color: black;
+  opacity: 0.4;
+  min-height: 400px;
+}
+.overlay:hover{
+  background-color: black;
+  opacity: 0.1;
+  min-height: 400px;
+}
+#about:hover{
+  opacity:1;
+   
 
 }
+.glow {
+  
+    color: #0060B6;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.glow:hover 
+{
+     color:greenyellow;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+  
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
 #portfolio{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/260697.jpg");
   background-position: center center;
@@ -101,6 +162,7 @@ h4{
   width:60%;
   
 }
+
 .carousel-item{
   text-align: center;
   padding-left: 30%;
