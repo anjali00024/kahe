@@ -75,9 +75,10 @@ body {
   background-repeat: no-repeat;  background-size: cover;
   min-height: 400px;
   
-  
-  
+   
 }
+
+
 .overlay{
   background-color: black;
   opacity: 0.4;
@@ -108,7 +109,7 @@ body {
 }
 
 .glow {
-  font-size: 80px;
+  font-size: 50px;
   color: #fff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
