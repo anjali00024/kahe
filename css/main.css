@@ -70,10 +70,8 @@ body {
 }
 
 #about{
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/img4.jpg");
-  background-position: center ;
-  background-repeat: no-repeat;  background-size: cover;
-  min-height: 400px;
+   
+height: auto;
   
    
 }
@@ -81,19 +79,16 @@ body {
 
 .overlay{
   background-color: black;
-  opacity: 0.4;
-  min-height: 400px;
+  opacity: 0.8;
+  
+  
 }
 .overlay:hover{
   background-color: black;
-  opacity: 0.1;
-  min-height: 400px;
+  opacity: 1;
+  
 }
-#about:hover{
-  opacity:1;
-   
 
-}
 .glow {
   
     color: #0060B6;
@@ -109,7 +104,7 @@ body {
 }
 
 .glow {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -134,6 +129,7 @@ body {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/260697.jpg");
   background-position: center center;
   background-repeat: no-repeat;  background-attachment: fixed;
+  background-size: cover;
 }
 
 .btn-xl {
