@@ -96,12 +96,7 @@ height: auto;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.glow:hover 
-{
-     color:greenyellow;
-     text-decoration:none; 
-     cursor:pointer;  
-}
+
 
 .glow {
   font-size: 40px;
@@ -110,8 +105,7 @@ height: auto;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
-  
-  
+    
 }
 
 @-webkit-keyframes glow {
