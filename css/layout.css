@@ -21,6 +21,12 @@
      border-radius: 8px;
  }
  
+ #layout{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/bg5.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;  background-attachment: fixed;
+  background-size: cover;
+ }
  
  .navbar li{
      padding:15px;
@@ -351,9 +357,9 @@
  
  #services
  {
-   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/260697.jpg");
+   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/bg5.jpg");
    background-position: center center;
-   background-repeat: no-repeat;  background-attachment: fixed;
+   background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;
  }
  
  
@@ -370,7 +376,7 @@
   }
   #carouselExampleIndicators
   {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/260697.jpg");
+    
     background-position: center center;
     background-repeat: no-repeat;  background-attachment: fixed;
     padding: 4rem;
@@ -388,16 +394,21 @@
   }
   #event_content
   {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/260697.jpg");
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/bg5.jpg");
     background-position: center center;
-    background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;
+    background-repeat: no-repeat;  background-attachment: fixed; 
       padding: 4rem;
   }
   #event_content p{
-    padding:3rem 2rem;
+    padding:2rem 2rem;
     background-color: black;
     opacity:0.7;
     color: #CCCCD4;
     margin:0;
+  }
+  p em{
+    font-weight: 600;
+    font-size: 30px;
+    
   }
   
