@@ -161,7 +161,15 @@
  }
  
  /* Side Menu */
- 
+ #event_title{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/red2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;  background-attachment: fixed;
+  padding:2rem;
+  color: #CCCCD4;
+  margin:0;
+}
  
  
  .service-icon {

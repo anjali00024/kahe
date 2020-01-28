@@ -13,23 +13,72 @@
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/all.min.css" rel="stylesheet" type="text/css">
-  
 
   <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/layout.css" rel="stylesheet">
+<style>
+  
 
-  <style>
-   .card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin:auto;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
-  </style>
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #333;
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  opacity: 0.75;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card p{
+  padding-top:30%;
+  padding-bottom:25%;
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+</style>
 </head>
 
 <body id="page-top">
@@ -43,14 +92,14 @@
     
     <div class="wrapper-header">
     <nav class="navbar sticky-top navbar-expand-lg navbar-expand-md  right text-white navbar-dark bg-transparent" id="nh">
-        <a class="navbar-brand" href="./index.html"><img src="media/logo.png" id="logo" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img src="media/logo.png" id="logo" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav nav justify-content-end">
-            <li class="nav-item ">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./ppl.html">People</a>
@@ -58,7 +107,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Our Story</a>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 What We Do
               </a>
@@ -66,7 +115,7 @@
                 <a class=" text-white dropdown-item nav-item" href="./events.html">Events</a>
                 <a class=" text-white dropdown-item" href="./workshops.html">Workshops</a>
                 <a class=" text-white dropdown-item" href="./natya.html">Natyalochan</a>
-                <a class=" text-white dropdown-item" href="./contactus.html">Partnership</a>
+                <a class=" text-white dropdown-item" href="./index.html#contact_us">Partnership</a>
 
               </div>
             </li>
@@ -80,7 +129,7 @@
                 <a class="nav-link" href="./index.html#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactus.html">Contact Us</a>
+                <a class="nav-link" href="./index.html#contact_us">Contact Us</a>
               </li>
           </ul>
         </div>
@@ -90,56 +139,35 @@
   
 </header>
   <div id="event_title" class=" text-center">
-    <h3>WORKSHOPS</h3>
+    <h3>Ande ke Chhilke</h3>
     
   </div>
 
-<div id="services">
-  <br>
-  <br>
-  <div class="container">
-  <div class="row">
+  <div class="row" id="layout">
     
-   
+    <div id="event_content" class="col-lg-6 col-sm-12">
+      <div  class="">
+        <p><em>Synopsis</em></p>
+        <p>A tale set in 1960s, about a household that is primarily indulged in vegetarian meals.In the times when eggs were a tabboo and forbidden in such houses, there was a daughter in law who is fond of eating them. will she brave the troubles and resort to eating some of the yellow and white goodness. Join us for this week's Natya Aalochan to find out. </p>
+        <br>
+         
+    </div>
+    </div>
+    <div id="carouselExampleIndicators" class="col-lg-6 col-sm-12">
+      <div  class="carousel slide" data-ride="carousel">
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="rounded mx-auto d-block" src="./media/a/n18.jpg" width="400px" height="400px" alt="First slide">
+          </div>
+          
 
-  <!-- evnt block start-->
-
-  <div  class="col-lg-4 col-sm-12 mb-3">
-    <div class="card bg-dark text-white mb-3">
-      <img class="card-img-top" src="./media/ch.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title ">Chhau Dance Workshop</h5>
-        <p class="card-text" ></p>
-        <p class="card-text "><button onclick="location.href='./cd.html'" class="btn btn-primary">More Info</button><button onclick="location.href='https://in.bookmyshow.com/plays/do-kaudi-ka-khel/ET00096435'" class="btn btn-primary float-right">Buy Tickets</button></p>
+        </div>
+        
       </div>
     </div>
-        
-</div>  
-
-  <!-- evnt block end-->
+  </div>
     
-<!-- evnt block start-->
-<div  class="col-lg-4 col-sm-12 mb-3">
-    <div class="card bg-dark text-white mb-3">
-      <img class="card-img-top" src="./media/aa.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title ">Aur Abhinay</h5>
-        <p class="card-text" ></p>
-        <p class="card-text "><button onclick="location.href='./aa.html'" class="btn btn-primary">More Info</button><button onclick="location.href='https://in.bookmyshow.com/plays/do-kaudi-ka-khel/ET00096435'" class="btn btn-primary float-right">Buy Tickets</button></p>
-      </div>
-    </div>
-        
-</div>
-<!-- evnt block end-->
-   
-    
-        
-</div>
-
-
-</div>
-</div>
-</div>
 
 <!-- IMAge slider-->
 
@@ -147,6 +175,18 @@
 <!--  THINGS WE DO-->
 
 
+      <!-- gola end-->
+
+      <!-- gola start-->
+
+      <!-- gola end-->
+      <!-- gola start-->
+      
+      <!-- gola end-->
+    </div>
+
+  </div>
+</section>
   <!-- About -->
   
   
@@ -155,30 +195,25 @@
  <section class="content-section" id="portfolio">
   
 </section>
-  <!-- Services -->
   
-
-  <!-- Callout -->
-  
-
-  
+   
 
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/kvidushak/">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/kvidushak/">
             <i class="fab fa-facebook-square"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.youtube.com/channel/UCsxccX-bDCoQPA3l_-9y47Q">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.youtube.com/channel/UCsxccX-bDCoQPA3l_-9y47Q">
             <i class="fab fa-youtube"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a target="_blank" class="social-link rounded-circle text-white" href="https://www.instagram.com/kahevidushak/">
+          <a class="social-link rounded-circle text-white" href="https://www.instagram.com/kahevidushak/">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
@@ -186,7 +221,6 @@
       <p class="text-muted small mb-0">Copyright &copy; Kahe Vidushak 2020</p>
     </div>
   </footer>
-
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
