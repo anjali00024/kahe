@@ -77,7 +77,7 @@
  
  h3{
    font-weight: 800;
-   font-size: 60px;
+   font-size: 40px;
  }
  h1,
  h2,
@@ -287,13 +287,13 @@
    width: 4rem;
    line-height: 4.3rem;
    font-size: 1.5rem;
-   background-color: #1D809F;
+   background-color: #dc3545;
    transition: background-color 0.15s ease-in-out;
    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
  }
  
  footer.footer .social-link:hover {
-   background-color: #155d74;
+   background-color: #dc3545;
    text-decoration: none;
  }
  
@@ -361,8 +361,14 @@
    background-position: center center;
    background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;
  }
+
+ .card{
+   background-color: #711D1E;
+ }
  
- 
+ .card-body{
+   padding: 0;
+ }
  
  /* layout courosel*/
  
@@ -374,6 +380,8 @@
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
+
+
   #carouselExampleIndicators
   {
     

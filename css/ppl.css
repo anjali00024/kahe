@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Stylish Portfolio v5.0.7 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
- */
 
  body,
  html {
@@ -76,15 +71,19 @@
    font-weight: 800;
    font-size: 60px;
  }
- h1{
-   margin-top: 100px;
-   font-size: 25px;
- }
+ 
+h1{
+  padding: 30px 0;
+  font-size: 30px;
+}
+
  h2,
  h4,
  h5,
  h6 {
    font-weight: 700;
+   font-size: 50px;
+   text-align: center;
  }
  
  .text-faded {
@@ -275,13 +274,13 @@
    width: 4rem;
    line-height: 4.3rem;
    font-size: 1.5rem;
-   background-color: #1D809F;
+   background-color: #dc3545;
    transition: background-color 0.15s ease-in-out;
    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
  }
  
  footer.footer .social-link:hover {
-   background-color: #155d74;
+   background-color: #dc3545;
    text-decoration: none;
  }
  
@@ -341,7 +340,9 @@
  /*
  
  mail*/
- 
+ .ss{
+   padding: 5%;
+ }
  
  
  
@@ -368,11 +369,11 @@
 
   .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: inline-flexbox;
     border-radius: 50%;
-    margin:10px;
+    margin:10px auto;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   

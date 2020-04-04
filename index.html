@@ -15,6 +15,9 @@
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- OWL carasouel-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
   <!-- Custom Fonts -->
   <link href="css/all.min.css" rel="stylesheet" type="text/css">
@@ -42,6 +45,13 @@
   border-radius: 5px;
 }
 
+
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.2%;
+  font-size: large;
+}
+
 </style>
 <body id="page-top">
 
@@ -67,17 +77,17 @@
                 <a class="nav-link" href="./ppl.html">People</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Story</a>
+                <a class="nav-link" href="#story">Our Story</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   What We Do
                 </a>
                 <div class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class=" text-white dropdown-item nav-item" href="./events.html">Events</a>
-                  <a class=" text-white dropdown-item" href="./workshops.html">Workshops</a>
-                  <a class=" text-white dropdown-item" href="./natya.html">Natyalochan</a>
-                  <a class=" text-white dropdown-item" href="./contactus.html">Partnership</a>
+                  <a class=" text-white dropdown-item nav-item" href="./events.html" >Productions</a>
+                  <a class=" text-white dropdown-item" href="./workshops.html">Trainings</a>
+                  <a class=" text-white dropdown-item" href="./natya.html">Theatre And Education</a>
+                  <a class=" text-white dropdown-item" href="./part.html">Partnerships</a>
 
                 </div>
               </li>
@@ -88,11 +98,12 @@
                   
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contactus.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactus.html">Contact Us</a>
+                </li>
+                
             </ul>
           </div>
         </nav>
@@ -100,19 +111,33 @@
   
     
   </header>
-
-  <!-- About -->
-  <section class="">
-    
-    <div class=" text-center"  id="about">
-      <div class="overlay">
-        <img class="img-fluid" src="./media/img4.jpg" alt="">
-        <a  class="btn btn-lg btn-dark"href="https://in.bookmyshow.com/plays/do-kaudi-ka-khel/ET00096435" >Buy Tickets Now</a>
-    </div>
+<!-- OUR STORY -->
+<section class="section text-white" id="story">
+  <div class="container">
+    <h3 style="text-align: center; color :white; padding-top:0px; padding-bottom: 60px;">Our Story</h3>
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <p >
+          For ages, it has been important for kings to have a clown in their court. The clown was called Vidushak in India. Vidushak was the only person allowed to make fun of the king. He would mock the king, abuse the king, imitate the king’s mannerisms and openly say things no one else dared to. His caustic words and barbs and jibes enabled the king to question his own decisions, challenge his own thoughts. For that he had to pay a price: he had to dress like a fool and look like an idiot. </p>
+        <p>
+          Now coming to the part as to why I relate to this “not-so-smart” character so much so that I started seeing myself in this guy. I have never agreed to the masses, never followed the herd blindly, but at the same time I never really had the courage to rebel and shout out. I started doing what the Vidushak did, questioning everything under the façade of some other character. Living the reality in this imagination made life so much more beautiful. So, for the past decade, I have been the Vidushak... :)
+        </p>
+        <p>
+          To sum up, the villain does the wrong, the hero rights the wrong, the Vidushak questions the right! 
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <br><br><br>
+        <img src="./media/vidu.jpg" class="img-fluid align-middle" alt="">
       </div>
     </div>
-    
-  </section>
+  </div>
+
+
+</section>
+
+  
+  
 
 <!--  THINGS WE DO-->
 
@@ -124,44 +149,50 @@
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        
-          <span class="service-icon rounded-circle mx-auto mb-3" style=" font-size:3.5em ;color: Tomato;">
-            <i class="fas fa-calendar-alt"></i>
+        <a href="./events.html">
+          <span class="service-icon rounded-circle mx-auto mb-3" style=" font-size:3.5em ;color: red;">
+            <i class="fas fa-mask"></i>
           </span>
           
         
         <h2>
-          <strong>Events</strong>
+          <strong>Productions</strong>
         </h2>
+        </a>
         <p class="text-faded mb-0"></p>
       </div>
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <span class="service-icon rounded-circle mx-auto mb-3"  style=" font-size:3.5em; color: Tomato;">
-          <i class="fas fa-tools"></i>
-        </span>
-        <h2>
-          <strong>Workshops</strong>
-        </h2>
-        <p class="text-faded mb-0"></p>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-        <span class="service-icon rounded-circle mx-auto mb-3"  style=" font-size:3.5em; color: Tomato;">
+        <a href="./workshops.html">
+        <span class="service-icon rounded-circle mx-auto mb-3"  style=" font-size:3.5em; color: red;">
           <i class="fas fa-american-sign-language-interpreting"></i>
         </span>
         <h2>
-          <strong>Natyalochan</strong>
+          <strong>Training</strong>
         </h2>
+        </a>
+        <p class="text-faded mb-0"></p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+        <a href="./natya.html">
+        <span class="service-icon rounded-circle mx-auto mb-3"  style=" font-size:3.5em; color: red;">
+          <i class="fas fa-book"></i>
+        </span>
+        <h2>
+          <strong>Theatre & Education</strong>
+        </h2></a>
         <p class="text-faded mb-0">
           
           </p>
       </div>
       <div class="col-lg-3 col-md-6">
-        <span class="service-icon rounded-circle mx-auto mb-3"  style=" font-size:3.5em; color: Tomato;">
+        <a href="./part.html">
+        <span class="service-icon rounded-circle mx-auto mb-3"  style=" font-size:3.5em; color: red;">
           <i class="fas fa-handshake"></i>
         </span>
         <h2>
           <strong>Partnerships</strong>
         </h2>
+      </a>
         <p class="text-faded mb-0">
        </p>
       </div>
@@ -177,8 +208,21 @@
       <h3 style="text-align: center; padding-top:0px; padding-bottom: 60px;"> RECENT WORK</h3>
     </div>
     <div class="row no-gutters">
+
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./skc.html">
+          <span class="caption">
+            <span class="caption-content">
+              <h2></h2>
+              <p class="mb-0"></p>
+            </span>
+          </span>
+          <img class="img-fluid" src="media/s1.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="./panchi.html">
           <span class="caption">
             <span class="caption-content">
               <h2></h2>
@@ -189,7 +233,7 @@
         </a>
       </div>
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./fc.html">
           <span class="caption">
             <span class="caption-content">
               <h2></h2>
@@ -200,7 +244,7 @@
         </a>
       </div>
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./fcr.html">
           <span class="caption">
             <span class="caption-content">
               <h2></h2>
@@ -210,70 +254,108 @@
           <img class="img-fluid" src="media/w4.jpg" alt="">
         </a>
       </div>
-      <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
-          <span class="caption">
-            <span class="caption-content">
-              <h2></h2>
-              <p class="mb-0"></p>
-            </span>
-          </span>
-          <img class="img-fluid" src="media/w2.jpg">
-        </a>
-      </div>
+      
     </div>
   </div>
 </section>
+<!-- About -->
+<section class="section intro" id="journey">
+  <div class="container">
+    <h3 style="text-align: center; color :white; padding-top:0px; padding-bottom: 60px;">Our Journey</h3>
+  </div>
+</section>
+
+<section class="timeline" id="services">
+  <ol>
+    <li>
+      <div>
+        <time>2034</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2037</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2040</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2043</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2046</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2056</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2057</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2067</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2057</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+   
+  </ol>
+  
+  <div class="arrows">
+    <button class="arrow arrow__prev disabled" disabled>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+    </button>
+    <button class="arrow arrow__next">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+    </button>
+  </div>
+</section>
+-->
   <!-- Services -->
   
 
-  <!-- Callout -->
-  
- 
-
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white" id="testimonials">
-    <h3 style="text-align: center; padding-top:0px; padding-bottom: 60px;"> Testimonials</h3>
+  <section class="content-section text-dark" id="partners">
+    <h3 style="text-align: center; padding-top:0px; padding-bottom: 60px;"> Partners</h3>
     <div class="container ">
-      <!-- TESTIMONIALS-->
+      <!-- Partners-->
       
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         
         <div class="carousel-inner ">
           <div class="carousel-item  active">
-            <h4> "I happened to watch their award winning play Pancchi and Wow! What great performances. Kudos to the entire team. Keep up the good work guys. Will surely be happy to see your plays in future"</h4>
-            <em> -Ritu jain</em>
+            <img class="img-fluid" src="media/partners/cip-logo-bw.png" >
           </div>
           <div class="carousel-item">
-            <h4> "Srinivas ( Director/Creative Head) of Kahe Vidushak himself is a great Actor with a huge range and has a great understanding of the vast Indian Culture and hence its beautifully captured in all his plays. If you get a chance to work with him or watch his plays, you will know what I am talking about."</h4>
-            <em> - Siddhartha S S</em>
+            <img class="img-fluid" src="media/partners/logo.png">
           </div>
           <div class="carousel-item">
-            <h4> "सोच ही सबसे बड़ा फर्क है और विदूषक की सोच, उसकी समझ, उसकी छटपटाहट, वो बेबाकपन, वो मासूमियत उसके काम में झलकती है । मेरा सौभाग्य है कि मैंने विदूषक का काम देखा है, पसंद किया है और दिली तमन्ना ये है कि विदूषक के साथ काम करने का मौका मिले । अनेकानेक शुभकामनायें"</h4>
-            <em> - Ashish Athawale</em>
+            <img class="img-fluid" src="media/partners/mechanical-bug-photo-logo2.png" >
           </div>
+
           <div class="carousel-item">
-            <h4> "These are bunch of very hardworking individuals collectively working to showcase nitigrities of society dilemma and noticeable behavioral traits with an intention to realize and celebrate life in its completeness. Highly recommended to be part of the festivity."</h4>
-            <em> - Geetanjaly Hembrom</em>
+            <img class="img-fluid" src="media/partners/p1.jpg" >
           </div>
+        
+        
           <div class="carousel-item">
-            <h4> "Kahe Vidushak is one of the best places I have ever been to. I have never seen such dedication for theatre and creativity, and a consistent will to bring out something new. If you haven't watched their shows, you have missed out on something really really great. And if you haven't worked with director Srinivas Naidu, you have missed the opportunity to explore some great amount of your own self and skills."</h4>
-            <em> - Pooja Tripathi</em>
+            <img class="img-fluid" src="media/partners/p2.png" >
           </div>
-          <div class="carousel-item">
-            <h4> "this tHeAtRe organisation comes out differently from other theatre organisation in Bangalore and outside the state, it was my honour to be as coordinator for the production and get a closer look into their works, such lovely and understanding people."</h4>
-            <em> - Vaishnavi Swami</em>
-          </div>
-          <div class="carousel-item">
-            <h4> "It’s a known n award winning group...
-              Plz do come to watch their plays!!"</h4>
-            <em> - Suresh Sharma</em>
-          </div>
-          <div class="carousel-item">
-            <h4> "Really appreciate the work they put into their art."</h4>
-            <em> - Ahmed Kamal Khan</em>
-          </div>
-          
+        
+         
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -282,6 +364,49 @@
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section> 
+
+  <!-- Call to Action -->
+  <section class="content-section text-white" id="testimonials">
+    <h3 style="text-align: center; padding-top:0px; padding-bottom: 60px;"> Testimonials</h3>
+    <div class="container ">
+      <!-- TESTIMONIALS-->
+      
+      <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel-inner ">
+          <div class="carousel-item  active">
+            <h4> 
+                 I have known Srini as a fine,sensitive actor. In my association with him he has given
+                  memorable performances on stage. Panchhi is his first directorial venture. That he would 
+                  prove to be a good director. I had no doubt. But his prowess and handling of such a 
+                  sensitive subject in Panchhi was a revelation. He has unobtrusivly cut open a window 
+                  into Nitin's household for us to peep into it to experience the traits and tribulations of lower middle class exsistence. Kudos to him.
+                 Plays like Panchhi make theatre great. Congratulations to the Panchhi team to have the courage and conviction to successfully stage such a serious and sensitive subject. </h4>
+            <em> -Mathura Kalauny</em>
+          </div>
+          <div class="carousel-item">
+            <h4> "I refrain writing about plays in general but today watched this hindi play called "Panchhi" produced by Anita Mithra and must say what an haunting play it was! Emotions were so surreal,a story of a middle class salesman who wishes to celebrate this 5th marriage anniversary and the hurdle he faces in this twisted society amidst his own poverty brings tears! It's a performance that will move everyone,that will make you think what is a real essence of celebration in a middle class family? Hadn't cried over a play for long this one made me cry.
+                  Thanks Manjunath Devraj and Kudos to the entire team who got this beauty on stage! 
+                  This Performance will stay for long with me!"</h4>
+            <em> -Abhishek Iyenger</em>
+          </div>
+          <div class="carousel-item">
+            <h4> "I watched this over the weekend and truly regretted the loss of those who did not watch it. The direction was astute and actors sincere.The time flew by, which I guess is the test of a good play. Can't wait to see their next. Kudos team "Panchhi"."</h4>
+            <em> -Zulfia Shaikh</em>
+          </div>
+          
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only ">Next</span>
         </a>
       </div>
   </section>
@@ -294,13 +419,8 @@
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/kvidushak/">
+          <a target="_blank" class="social-link rounded-circle text-white " href="https://www.facebook.com/kvidushak/">
             <i class="fab fa-facebook-square"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.youtube.com/channel/UCsxccX-bDCoQPA3l_-9y47Q">
-            <i class="fab fa-youtube"></i>
           </a>
         </li>
         <li class="list-inline-item">
@@ -308,8 +428,23 @@
             <i class="fab fa-instagram"></i>
           </a>
         </li>
+        <li class="list-inline-item">
+          <a target="_blank" class="social-link rounded-circle text-white" href="https://www.twitter.com/kahevidushak/">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.youtube.com/channel/UCsxccX-bDCoQPA3l_-9y47Q">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        
       </ul>
       <p class="text-muted small mb-0">Copyright &copy; Kahe Vidushak 2020</p>
+<br>
+<br>
+ <h1>|  विचारों को निडर, कहे विदूषक  | </h1>
+
     </div>
   </footer>
 
@@ -327,7 +462,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.js"></script>
-
+  
+<script src="js/owl.carousel.min.js"></script>
 </body>
 
 </html>
