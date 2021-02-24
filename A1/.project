@@ -7,6 +7,6 @@
 	<buildSpec>
 	</buildSpec>
 	<natures>
-		<nature>org.talend.core.talendnature</nature>
+		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
 </projectDescription>
